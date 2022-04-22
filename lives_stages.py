@@ -2,6 +2,7 @@
 Create Hangman visual to appear every time a guess in incorrect
 """
 lives_lost = {
+   8: "",
    7: """
    +------+
    |      |

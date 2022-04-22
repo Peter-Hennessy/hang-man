@@ -18,14 +18,14 @@ def hangman():
     alphabet = set(string.ascii_uppercase)
     guessed_letters = set()
 
-    lives = 7
+    lives = 8
 
     # Getting the input fromt the player
     while len(letter_in_word) > 0 and lives > 0:
         #  letters guessed
         # ' '.join(['a', 'b', 'cd']) --> 'a b cd'
         print(
-            "you have: ",
+            "You have: ",
             lives, "lives left and you have guessed these letters: ", ' '.join(
                 guessed_letters))
         
@@ -57,9 +57,14 @@ def hangman():
     #  Returns to here when len(letters-in_word) == 0 OR when lives == 0
     if lives == 0:
         print(lives_lost[lives])
-        print("Undertaker take him away, the word was", word)
+        print("Undertaker take", name,  "away, the word was", word)
     else:
         print("\nYou have a last minute pardon, you geussed", word, "")
+
+name = input("Please enter your name: -->")
+print("Welcome to the gallows", name, "Hope you get home safe!!!")
+print("=========================================================")
+print("Try to guess the word in 8 attempts")
 
 
 if __name__ == '__main__':
