@@ -3,18 +3,12 @@ from list_of_words import list_of_words
 from lives_stages import lives_lost
 import string
 
-name = input("Please enter your name: -->")
-print("Welcome to the the gallows ", name, "!!!!!")
-print("==========================================")
-print("To save your life try to guess the word in 7 attempts")
-
-
 
 def get_valid_word(list_of_words):
     word = random.choice(list_of_words)   #   Randomly choose a word from the list
     while ' - ' in word or ' ' in word:
         word = random.choice(list_of_words)
-    
+
     return word.upper()
 
 
@@ -29,23 +23,24 @@ def hangman():
     # Getting the input fromt the player
     while len(letter_in_word) > 0 and lives > 0:
         #  letters guessed
+        # ' '.join(['a', 'b', 'cd']) --> 'a b cd'
         print(
-            "you have: ", 
-            lives, "lives left and you have guessed these letters: ", ''.join(
+            "you have: ",
+            lives, "lives left and you have guessed these letters: ", ' '.join(
                 guessed_letters))
         
         #  Show the guessed word with correct letters and blanks
         word_list = [
             letter if letter in guessed_letters else '-' for letter in word]
         print(lives_lost[lives])
-        print("Current word is: ", ' '.join(list_of_words))
+        print("Current word is: ", ' '.join(word_list))
 
         player_guess = input("Pick a letter: ").upper()
         if player_guess in alphabet - guessed_letters:
             guessed_letters.add(player_guess)
             if player_guess in letter_in_word:
                 letter_in_word.remove(player_guess)
-                print('')
+                print(' ')
             
             else:
                 lives = lives - 1
