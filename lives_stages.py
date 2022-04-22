@@ -1,7 +1,7 @@
 """
 Create Hangman visual to appear every time a guess in incorrect
 """
-lives_visual_dict = {
+lives_lost = {
    7: """
    +------+
    |      |
