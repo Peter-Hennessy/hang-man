@@ -1,5 +1,5 @@
 import random
-from word_list import word_list
+from list_of_words import list_of_words
 from lives_stages import lives_lost
 import string
 
@@ -10,16 +10,16 @@ print("To save your life try to guess the word in 7 attempts")
 
 
 
-def get_only_valid(word_list):
-    valid = random.choice(word_list)   #   Randomly choose a word from the list
-    while ' - ' in valid or ' ' in valid:
-        word = random.choice(word_list)
+def get_valid_word(list_of_words):
+    word = random.choice(list_of_words)   #   Randomly choose a word from the list
+    while ' - ' in word or ' ' in word:
+        word = random.choice(list_of_words)
     
     return word.upper()
 
 
 def hangman():
-    word = get_only_valid(word_list)
+    word = get_valid_word(list_of_words)
     letter_in_word = set(word)  #   Letters in the word
     alphabet = set(string.ascii_uppercase)
     guessed_letters = set()
@@ -35,9 +35,10 @@ def hangman():
                 guessed_letters))
         
         #  Show the guessed word with correct letters and blanks
-        complete_word = [letter if letter in guessed_letters else '-' for letter in valid]
+        word_list = [
+            letter if letter in guessed_letters else '-' for letter in word]
         print(lives_lost[lives])
-        print("Current word is: ", ' '.join(word_list))
+        print("Current word is: ", ' '.join(list_of_words))
 
         player_guess = input("Pick a letter: ").upper()
         if player_guess in alphabet - guessed_letters:
@@ -45,3 +46,26 @@ def hangman():
             if player_guess in letter_in_word:
                 letter_in_word.remove(player_guess)
                 print('')
+            
+            else:
+                lives = lives - 1
+                print(
+                    "\nYour are incorrect", player_guess, "is not in the word"
+                    )
+            
+        elif player_guess in guessed_letters:
+            print("\nYou have already guessed tha letter, Please try again!")
+        
+        else:
+            print("\nThat is not a valid letter.")
+    
+    #  Returns to here when len(letters-in_word) == 0 OR when lives == 0
+    if lives == 0:
+        print(lives_lost[lives])
+        print("Undertaker take him away, the word was", word)
+    else:
+        print("\nYou have a last minute pardon, you geussed", word, "")
+
+
+if __name__ == '__main__':
+    hangman()
