@@ -29,7 +29,7 @@ The idea for my project comes from a game I like to play myself, I played as a c
 *  [**Acknowledgements**](<#acknowledgements>)
 
 # User Stories
-- As a user I want to be able understand what i need to do to star  the game
+- As a user I want to be able understand what I need to do to starT  the game
 - As a user I need to be able to see clearly understand where I want to go
 - As a user I need to be able to see text and images clearly
 - As a user I need to be able to understand the rules of the game
