@@ -2,40 +2,34 @@
 
 ## Welcome to <a href="https://hang-man2022.herokuapp.com/" target="_blank" rel="noopener">Hang-man</a> A Game that hangs in the balance with every wrong answer
 
-The idea for my project comes from a game I like to play myself, I played as a child with friends and family. ita a really simple game abut can keep you entertained for hours if needed. 
+The idea for my project comes from a game I liked to play myself as a child,  with friends and family. It is  a really simple game but can keep you entertained for hours if needed. 
 
 # Contents
 
 * [**User Experience UX**](<#user-experience-ux>)
-    *  [User Stories](<#user-stories>)
+    * [User Stories](<#user-stories>)
     * [Game Structure](<#game-structure>)
     
-* [**Features**](<#features>)
-    * [**Home**](<#challenge-menu>
-         * [Rules](<#request-demo>)
-
-         
+* [**Features**](<#features>)     
 * [**Technologies Used**](<#technologies-used>)
 * [**Testing**](<#testing>)
 * [**Deployment**](<#deployment>)
-* [**Credits**](<#credits>)
-* [Content](<###content>)
-*  [**Acknowledgements**](<#acknowledgements>)
+* [**Acknowledgements**](<#acknowledgements>)
 
 # User Stories
-- As a user I want to be able understand what I need to do to start  the game
-- As a user I need to be able to see clearly understand what I need to do
+- As a user I want to be able Know what I need to do to start  the game
+- As a user I need to be able clearly understand what I need to do
 - As a user I need to be able to see text and images clearly
 - As a user I need to be able to understand the rules of the game
-- As A user I need to want to return to the game after the initial game is finished
+- As a user I need to want to return to the game after the initial game is finished
 
  [Top](<#contents>)
 
 # Game Structure
-* The game begins by asking the user their name to invite them in on a personal level
-* For the game I created a game where the player has 8 lives to guess a word through the process of elimination
+* The game begins by asking the user their name to invite them in on a personal journey
+* I created a game where the player has 8 lives to guess a word through the process of elimination
 * If the user gets a incorrect letter, then a piece of the hangman image will appear
-* Every letter tha is guessed will appear as to avoid repitition in the guesses
+* Every letter that is guessed will appear as to avoid repitition in the guesses
 * If all guesses are made a message will appear to say the user is free to go, or needs to be taken to the undertaker, depending on the outcome
 
 

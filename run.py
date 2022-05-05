@@ -4,9 +4,10 @@ if a guess is wrong the player looses a life and a hangman image wil update
 The player will have 8 lives to guess the word
 """
 import random
+import string
 from list_of_words import list_of_words
 from lives_stages import lives_lost
-import string
+
 
 #    Randomly choose a word from the list
 
