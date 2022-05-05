@@ -1,6 +1,6 @@
 # Hang-man 
 
-## Welcome to <a href="https://hang-man2022.herokuapp.com/" target="_blank" rel="noopener">Hang-man</a> A Game that hangs on a wrong answer
+## Welcome to <a href="https://hang-man2022.herokuapp.com/" target="_blank" rel="noopener">Hang-man</a> A Game that hangs in the balance with every wrong answer
 
 The idea for my project comes from a game I like to play myself, I played as a child with friends and family. ita a really simple game abut can keep you entertained for hours if needed. 
 
@@ -8,7 +8,6 @@ The idea for my project comes from a game I like to play myself, I played as a c
 
 * [**User Experience UX**](<#user-experience-ux>)
     *  [User Stories](<#user-stories>)
-    * [Wireframes](<#wireframes>)
     * [Game Structure](<#game-structure>)
     
 * [**Features**](<#features>)
@@ -33,8 +32,8 @@ The idea for my project comes from a game I like to play myself, I played as a c
  [Top](<#contents>)
 
 # Game Structure
-* The game begin by asking the name of the user their name to invite them in on a personal level
-* For the game I created a game where the player has 8 lives to guess a word thorught the process of elimination
+* The game begins by asking the user their name to invite them in on a personal level
+* For the game I created a game where the player has 8 lives to guess a word through the process of elimination
 * If the user gets a incorrect letter, then a piece of the hangman image will appear
 * Every letter tha is guessed will appear as to avoid repitition in the guesses
 * If all guesses are made a message will appear to say the user is free to go, or needs to be taken to the undertaker, depending on the outcome
@@ -45,19 +44,18 @@ The idea for my project comes from a game I like to play myself, I played as a c
 
  # Future Features
 
- - In the future I would like to create a game where the numbers were pre selected using a specific algorithm, At the moment the game only has 3 boards with content, But it has 3 time levels which may add to the challenge
+ - In the future I would like to be able to apply styling to the platform, and animation images to the game
 
  [Top](<#contents>)
 
  
  
 # Technologies Used
-* [HTML5](https://html.spec.whatwg.org/) - provides the content and structure for the website.
-* [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - provides the styling.
-* [Balsamiq](https://balsamiq.com/wireframes/) - used to create the wireframes.
+
 * [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
 * [Github](https://github.com/) - used to host and edit the website.
-* [JavaScript](https://www.w3schools.com/js/) - provides the interactivity for the game
+* [Python](https://www.w3schools.com/python/) - provides the interactivity for the game
+* [Heroku](https://www.heroku.com/) - enables the game to be deployed in a browser
 
  [Top](<#contents>)
 
@@ -107,17 +105,15 @@ The method from cloning a project from GitHub is below: ![Cloned Repository](ass
 
  [Top](<#contents>)
 
-# Credits
- 
-
- [Top](<#contents>)
-
 # Acknowledgements
 - The project was completed as a Portfolio Project 3 piece for the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/). 
 
-- The concept for the game came from a online tutorial, [redFlyer Coding](https://m.youtube.com/c/redflyercoding). 
+- The concept for the game came from a online tutorial, [Kylie Ying](https://www.youtube.com/watch?v=cJJTnI22IF8).
  
 - I would like to acknowledge the [Slack Community](https://slack.com/) for the help and the eagerness to help others in this community, also the encouragement and support that is given from students in similar situations as yourself
+
 - Also [Kasia Boguka](https://github.com/bezebee) for her help & guidance with the project, and support and encouragement, and is always there to answer any questions
+
+- [Tutor support](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopmentecommerce/support) really helped during this project, first time using them and would encourage students stuck on a problem to reach out for help
 
  [Top](<#contents>)
